@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		2D0BFE66271DE05A00EFCB24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BFE65271DE05A00EFCB24 /* AppDelegate.swift */; };
 		2D0BFE68271DE05A00EFCB24 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BFE67271DE05A00EFCB24 /* GameScene.sks */; };
-		2D0BFE6A271DE05A00EFCB24 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BFE69271DE05A00EFCB24 /* Actions.sks */; };
 		2D0BFE6C271DE05A00EFCB24 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BFE6B271DE05A00EFCB24 /* GameScene.swift */; };
 		2D0BFE6E271DE05A00EFCB24 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BFE6D271DE05A00EFCB24 /* GameViewController.swift */; };
 		2D0BFE71271DE05A00EFCB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BFE6F271DE05A00EFCB24 /* Main.storyboard */; };
 		2D0BFE73271DE05D00EFCB24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BFE72271DE05D00EFCB24 /* Assets.xcassets */; };
+		2D0BFE7B271F9EBC00EFCB24 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BFE7A271F9EBB00EFCB24 /* background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0BFE62271DE05A00EFCB24 /* Challenge6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0BFE65271DE05A00EFCB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0BFE67271DE05A00EFCB24 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2D0BFE69271DE05A00EFCB24 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2D0BFE6B271DE05A00EFCB24 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2D0BFE6D271DE05A00EFCB24 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2D0BFE70271DE05A00EFCB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0BFE72271DE05D00EFCB24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0BFE74271DE05D00EFCB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0BFE7A271F9EBB00EFCB24 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +60,11 @@
 			children = (
 				2D0BFE65271DE05A00EFCB24 /* AppDelegate.swift */,
 				2D0BFE67271DE05A00EFCB24 /* GameScene.sks */,
-				2D0BFE69271DE05A00EFCB24 /* Actions.sks */,
 				2D0BFE6B271DE05A00EFCB24 /* GameScene.swift */,
 				2D0BFE6D271DE05A00EFCB24 /* GameViewController.swift */,
 				2D0BFE6F271DE05A00EFCB24 /* Main.storyboard */,
 				2D0BFE72271DE05D00EFCB24 /* Assets.xcassets */,
+				2D0BFE7A271F9EBB00EFCB24 /* background@2x.png */,
 				2D0BFE74271DE05D00EFCB24 /* Info.plist */,
 			);
 			path = Challenge6;
@@ -129,8 +129,8 @@
 			files = (
 				2D0BFE71271DE05A00EFCB24 /* Main.storyboard in Resources */,
 				2D0BFE68271DE05A00EFCB24 /* GameScene.sks in Resources */,
+				2D0BFE7B271F9EBC00EFCB24 /* background@2x.png in Resources */,
 				2D0BFE73271DE05D00EFCB24 /* Assets.xcassets in Resources */,
-				2D0BFE6A271DE05A00EFCB24 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keithcrooc.Challenge6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -311,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keithcrooc.Challenge6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
