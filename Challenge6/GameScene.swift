@@ -48,7 +48,7 @@ class GameScene: SKScene {
 
 //        create middle targets
         createTargetMid(at: CGPoint(x: 347, y: 172), name: "MidTarget1")
-        createTargetMid(at: CGPoint(x: 627, y: 277), name: "MidTarget2" )
+        createTargetMid(at: CGPoint(x: 427, y: 277), name: "MidTarget2" )
   
         
 //        create right targets
@@ -64,6 +64,9 @@ class GameScene: SKScene {
         targetSprite.position = position
         targetSprite.size = CGSize(width: 100, height: 100)
         addChild(targetSprite)
+        
+        
+        
     }
     
     
@@ -75,7 +78,29 @@ class GameScene: SKScene {
         targetSprite.size = CGSize(width: 100, height: 100)
         targetSprite.name = name
         addChild(targetSprite)
+        
+        
+        targetSprite.physicsBody = SKPhysicsBody(texture: targetSprite.texture!, size: targetSprite.size)
+        
+//        we want the target to float. Gotta set the gravity of this target to be 0 so it doesn't fall
+        physicsWorld.gravity = .zero
+        
+//        let xValue = CGFloat(position.x)
+        let yValue = CGFloat(position.y)
+        
+        let xValue = CGFloat.random(in: 347...470)
+        
+        let speed = Double.random(in: 1...2)
+        
+        
+        let moveRight = SKAction.move(to: CGPoint(x: xValue + 300, y: yValue), duration: TimeInterval(speed))
+        let moveLeft = SKAction.move(to: CGPoint(x: xValue - 30, y: yValue), duration: TimeInterval(speed))
+        
+        targetSprite.run(SKAction.repeatForever(SKAction.sequence([moveRight, moveLeft])))
+        
     }
+    
+    
     
     func createTargetRight(at position: CGPoint, name: String) {
         guard let target = possibleTargets.randomElement() else { return }
